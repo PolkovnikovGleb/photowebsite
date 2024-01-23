@@ -1,15 +1,10 @@
-/* eslint-disable comma-dangle */
-/* eslint-disable object-curly-spacing */
-// eslint-disable-next-line object-curly-spacing
-
-const {Model} = require('sequelize');
+const { Model } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
   class Album extends Model {
-    static associate({User, Photo}) {
-      this.belongsTo(User, {foreignKey: 'userId'});
-      this.hasMany(Photo, {foreignKey: 'photoId'});
-      this.
+    static associate({ User, Photo }) {
+      this.belongsTo(User, { foreignKey: 'userId' });
+      this.hasMany(Photo, { foreignKey: 'albumId' });
     }
   }
   Album.init(
@@ -35,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       sequelize,
       modelName: 'Album',
-    }
+    },
   );
   return Album;
 };
