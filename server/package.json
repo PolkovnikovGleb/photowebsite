@@ -2,9 +2,10 @@
   "name": "photowebsite",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "dev": "nodemon app.js -e js,json,jsx --ignore ./sessions",
     "db:create": "sequelize db:create",
     "db:drop": "sequelize db:drop",
     "db:migrate": "sequelize db:migrate",
@@ -25,12 +26,18 @@
     "@babel/preset-react": "^7.23.3",
     "@babel/register": "^7.23.7",
     "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
     "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "express-session": "^1.17.3",
     "pg": "^8.11.3",
     "pg-hstore": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sequelize": "^6.35.2",
-    "sequelize-cli": "^6.6.2"
+    "sequelize-cli": "^6.6.2",
+    "session-file-store": "^1.5.0"
   }
 }
