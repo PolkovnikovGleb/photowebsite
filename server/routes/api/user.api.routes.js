@@ -6,10 +6,10 @@ const {User} = require('../../db/models');
 // отдаем всех юзеров
 router.get('/', async (request, response) => {
   try {
-    const users = await User.findAll();
-    response.json(users);
+    const users = await User.findAll({});
+    response.status(200).json(users);
   } catch ({message}) {
-    response.json({message});
+    response.status(400).json({message: 'не удалось получить все сущности'});
   }
 });
 
@@ -17,10 +17,11 @@ router.get('/', async (request, response) => {
 router.get('/:userId', async (request, response) => {
   try {
     const {userId} = request.params;
+    console.log(userId);
     const user = await User.findOne({where: {id: userId}});
     response.json(user);
   } catch ({message}) {
-    response.json({message});
+    response.status(400).json({message: 'не удалось получить юзера'});
   }
 });
 
@@ -31,7 +32,7 @@ router.post('/', async (request, response) => {
     const user = await User.create({name, email, password});
     response.json(user);
   } catch ({message}) {
-    response.json({message});
+    response.status(400).json({message: 'не удалось добавить юзера'});
   }
 });
 
@@ -46,7 +47,7 @@ router.put('/:userId', async (request, response) => {
     );
     response.json(result);
   } catch ({message}) {
-    response.json({message});
+    response.status(400).json({message: 'не удалось изменить юзера'});
   }
 });
 
@@ -57,7 +58,7 @@ router.delete('/:userId', async (request, response) => {
     const result = await User.destroy({where: {id: userId}});
     response.json(result);
   } catch ({message}) {
-    response.json({message});
+    response.status(400).json({message: 'не удалось удалить юзера'});
   }
 });
 

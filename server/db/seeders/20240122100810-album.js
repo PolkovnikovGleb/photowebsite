@@ -7,19 +7,19 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await Album.bulkCreate([
       {
-        title: 'Альбом 1',
-        description: 'что-то',
+        title: 'Полина',
+        description: 'Индивидульная фотосъемка',
         userId: 1,
       },
       {
-        title: 'Альбом 2',
-        description: 'туц-туц-туц',
+        title: 'Юля',
+        description: 'Индивидульная фотосъемка',
         userId: 1,
       },
     ]);
   },
 
   async down(queryInterface, Sequelize) {
-    await Album.destroy({ where: {}});
+    await Album.destroy({where: {}});
   },
 };

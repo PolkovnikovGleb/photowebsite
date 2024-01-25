@@ -3,23 +3,22 @@ const router = require('express').Router();
 const {Album, User} = require('../../db/models');
 
 // получить все альбомы
-router.post('/', async (request, response) => {
+router.get('/', async (request, response) => {
   try {
     const albums = await Album.findAll();
     response.json(albums);
   } catch ({message}) {
-    response.json({message});
+    response.status(400).json({message});
   }
 });
 
 // получить один альбом
 router.get('/:albumId', async (request, response) => {
   try {
-    const {albumId} = request.body;
-    const album = await Album.findOne({where: {id: albumId}});
+    const album = await Album.findOne({where: {id: request.params.albumId}});
     response.json(album);
   } catch ({message}) {
-    response.json({message});
+    response.status(400).json({message});
   }
 });
 
@@ -34,7 +33,7 @@ router.post('/', async (request, response) => {
     });
     response.json(newAlbum);
   } catch ({message}) {
-    response.json({message});
+    response.status(400).json({message});
   }
 });
 
@@ -53,8 +52,8 @@ router.delete('/:albumId', async (request, response) => {
     }
     response.status(403).json({message: 'Ошибка доступа'});
   } catch ({message}) {
-    console.log(message);
+    response.status(400).json({message});
   }
 });
 
-module.export = router;
+module.exports = router;

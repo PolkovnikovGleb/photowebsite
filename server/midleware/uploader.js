@@ -1,3 +1,4 @@
+/* eslint-disable object-curly-spacing */
 const path = require('path');
 const util = require('util');
 
