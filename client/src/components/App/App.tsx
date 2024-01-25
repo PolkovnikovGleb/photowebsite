@@ -1,15 +1,22 @@
 import React from 'react';
 import './App.css';
-import {Route, Routes} from 'react-router';
-import MainPage from 'components/features/MainPage/MainPage';
 
-function App(): JSX.Element {
+function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-      </Routes>
+      <header className="App-header">
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
