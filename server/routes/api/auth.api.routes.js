@@ -79,4 +79,4 @@ router.get('/logout', (request, response) => {
   });
 });
 
-module.export = router;
+module.exports = router;
