@@ -1,14 +1,19 @@
 import React from 'react';
 import './App.css';
 import {Route, Routes} from 'react-router';
-import MainPage from 'components/features/HomePage/HomePage';
+import {router} from '../../configs/router';
 
 function App(): JSX.Element {
   return (
     <div className="app">
-      <h1>Hello World!</h1>
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        {router.map(item => (
+          <Route
+            key={item.id}
+            path={item.path}
+            element={<item.component />}
+          />
+        ))}
       </Routes>
     </div>
   );
