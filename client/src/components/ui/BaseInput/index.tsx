@@ -20,7 +20,7 @@ const BaseInput = (props: InputHTMLAttributes<HTMLInputElement> & {label?: strin
       </label>
       <input
         className={s.baseInput__input}
-        placeholder='Email address'
+        placeholder={name}
         type='text'
         id='email'
         onChange={onChange}

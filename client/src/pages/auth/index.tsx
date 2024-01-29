@@ -5,8 +5,8 @@ import BaseInput from '../../components/ui/BaseInput';
 import s from './styles.module.scss'
 
 const Auth = (): React.JSX.Element => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
 
   return (
     <div className={s.auth}>
