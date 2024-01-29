@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import {Route, Routes} from 'react-router';
-import {router} from '../../configs/router';
+import { Route, Routes } from 'react-router';
+import { router } from '../../configs/router';
 
 function App(): JSX.Element {
   return (
     <div className="app">
       <Routes>
-        {router.map(item => (
+        {router.map((item) => (
           <Route
             key={item.id}
             path={item.path}

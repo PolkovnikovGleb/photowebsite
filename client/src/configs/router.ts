@@ -1,10 +1,10 @@
 import Auth from '../pages/auth';
-import Home from '../pages/home'
+import Home from '../pages/home';
 
 export const routes = {
   home: '/',
   auth: '/auth',
-}
+};
 
 export const router = [
   {
@@ -19,4 +19,4 @@ export const router = [
     path: routes.auth,
     component: Auth,
   },
-]
+];

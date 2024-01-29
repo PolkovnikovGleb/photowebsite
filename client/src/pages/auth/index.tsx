@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import BaseButton from '../../components/ui/BaseButton';
 import BaseInput from '../../components/ui/BaseInput';
 
-import s from './styles.module.scss'
+import s from './styles.module.scss';
 
-const Auth = (): React.JSX.Element => {
+function Auth(): React.JSX.Element {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
@@ -24,14 +24,14 @@ const Auth = (): React.JSX.Element => {
           onChange={(event) => setPassword(event.target.value)}
         />
         <BaseButton
-          type='submit'
+          type="submit"
         >
           Log In
         </BaseButton>
         <p className={s.auth__forgot}>Forgot your password?</p>
       </div>
     </div>
-  )
+  );
 }
 
 export default Auth;
