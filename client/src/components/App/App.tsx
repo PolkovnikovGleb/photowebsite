@@ -1,16 +1,20 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
-import {Route, Routes} from 'react-router';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import MainPage from 'components/features/HomePage/HomePage';
+import AlbumPage from 'components/features/AlbumPage/AlbumPage';
+import NavBar from 'components/features/Header/NavBar/NavBar';
 
 function App(): JSX.Element {
   return (
-    <div className="app">
-      <h1>Hello World!</h1>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/" element={<NavBar />}>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/albums" element={<AlbumPage />} />
+        </Route>
       </Routes>
-    </div>
+    </BrowserRouter>
   );
 }
 
