@@ -34,9 +34,7 @@
     "start": "ESLINT_NO_DEV_ERRORS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint --ext .ts .",
-    "lint:fix": "eslint --fix --ext .ts,.tsx,.js,.cjs --ignore-path .gitignore ."
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
