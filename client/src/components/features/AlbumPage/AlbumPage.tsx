@@ -5,7 +5,6 @@ import AlbumItem from './AlbumItem';
 
 function AlbumPage(): JSX.Element {
   const albums = useSelector((stor: RootState) => stor.albums.albums);
-  console.log(albums);
   return (
     <div>
       <h1>Страница с албомами</h1>

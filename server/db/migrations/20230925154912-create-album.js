@@ -16,6 +16,10 @@ module.exports = {
         allowNull: false,
         type: Sequelize.TEXT,
       },
+      url: {
+        allowNull: false,
+        type: Sequelize.TEXT,
+      },
       userId: {
         allowNull: false,
         type: Sequelize.INTEGER,

@@ -1,10 +1,11 @@
-const { Model } = require('sequelize');
+/* eslint-disable object-curly-spacing */
+const {Model} = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
   class Album extends Model {
-    static associate({ User, Photo }) {
-      this.belongsTo(User, { foreignKey: 'userId' });
-      this.hasMany(Photo, { foreignKey: 'albumId' });
+    static associate({User, Photo}) {
+      this.belongsTo(User, {foreignKey: 'userId'});
+      this.hasMany(Photo, {foreignKey: 'albumId'});
     }
   }
   Album.init(
@@ -14,6 +15,10 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.TEXT,
       },
       description: {
+        allowNull: false,
+        type: DataTypes.TEXT,
+      },
+      url: {
         allowNull: false,
         type: DataTypes.TEXT,
       },

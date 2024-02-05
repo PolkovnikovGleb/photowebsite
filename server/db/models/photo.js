@@ -1,10 +1,10 @@
-const { Model } = require('sequelize');
+const {Model} = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
   class Photo extends Model {
-    static associate({ Album, User }) {
-      this.belongsTo(User, { foreignKey: 'userId' });
-      this.belongsTo(Album, { foreignKey: 'albumId' });
+    static associate({Album, User}) {
+      this.belongsTo(User, {foreignKey: 'userId'});
+      this.belongsTo(Album, {foreignKey: 'albumId'});
     }
   }
   Photo.init(
@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         type: DataTypes.TEXT,
       },
-      img: {
+      url: {
         allowNull: false,
         type: DataTypes.TEXT,
       },
@@ -43,7 +43,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       sequelize,
       modelName: 'Photo',
-    },
+    }
   );
   return Photo;
 };
