@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/style.css';
 import {Link, Outlet} from 'react-router-dom';
 
 export default function NavBar(): JSX.Element {
@@ -15,7 +16,7 @@ export default function NavBar(): JSX.Element {
           <p>Gleb Polkovnikov</p>
         </div>
         <div>
-          <Link to="/">Зарегистрироваться</Link> {/* Ссылка на регу */}
+          <Link to="/">Регистрация</Link> {/* Ссылка на регу */}
         </div>
         <div>
           <Link to="/">Войти</Link> {/* Ссылка на вход */}

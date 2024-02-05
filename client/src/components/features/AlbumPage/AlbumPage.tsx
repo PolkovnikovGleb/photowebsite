@@ -6,13 +6,10 @@ import AlbumItem from './AlbumItem';
 function AlbumPage(): JSX.Element {
   const albums = useSelector((stor: RootState) => stor.albums.albums);
   return (
-    <div>
-      <h1>Страница с албомами</h1>
-      <div>
-        {albums.map((album) => (
-          <AlbumItem key={album.id} album={album} />
-        ))}
-      </div>
+    <div className="albumPage">
+      {albums.map((album) => (
+        <AlbumItem key={album.id} album={album} />
+      ))}
     </div>
   );
 }
