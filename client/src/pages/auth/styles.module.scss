@@ -1,0 +1,27 @@
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  &__content {
+    width: 100%;
+    max-width: 450px;
+    padding: 60px 45px 50px;
+
+    border-radius: 34px;
+    box-shadow: 0 5px 16px 0 rgba(8, 15, 52, 0.2);
+  }
+
+  &__forgot {
+    color: #6F6C90;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+
+    margin-top: 22px;
+    text-align: center;
+    cursor: pointer;
+  }
+}

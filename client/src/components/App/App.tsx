@@ -1,11 +1,9 @@
 import React, {useEffect} from 'react';
 import './App.css';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import MainPage from 'components/features/HomePage/HomePage';
-import AlbumPage from 'components/features/AlbumPage/AlbumPage';
-import NavBar from 'components/features/Header/NavBar/NavBar';
-import {useAppDispatch} from 'Redux/store';
+import {Route, Routes} from 'react-router';
+import {router} from '../../configs/router';
 import {albumsInit} from 'components/features/AlbumPage/albumsSlice';
+import {useAppDispatch} from 'Redux/store';
 
 function App(): JSX.Element {
   const dicpatch = useAppDispatch();
@@ -15,14 +13,13 @@ function App(): JSX.Element {
   }, []);
 
   return (
-    <BrowserRouter>
+    <div className="app">
       <Routes>
-        <Route path="/" element={<NavBar />}>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/albums" element={<AlbumPage />} />
-        </Route>
+        {router.map((item) => (
+          <Route key={item.id} path={item.path} element={<item.component />} />
+        ))}
       </Routes>
-    </BrowserRouter>
+    </div>
   );
 }
 
