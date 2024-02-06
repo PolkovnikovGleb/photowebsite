@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: aliceblue;
+  background-color: #3a3e47ad;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}

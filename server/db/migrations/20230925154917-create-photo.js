@@ -12,7 +12,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.TEXT,
       },
-      img: {
+      url: {
         allowNull: false,
         type: Sequelize.TEXT,
       },
