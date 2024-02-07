@@ -1,7 +1,6 @@
 import Auth from '../pages/auth';
 import Home from '../pages/home';
-import 
-  import AlbumPage from 'pages/album/AlbumPage';
+import AlbumPage from 'pages/album/AlbumPage';
 
 export const routes = {
   home: '/',
