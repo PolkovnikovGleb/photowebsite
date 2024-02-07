@@ -4,7 +4,7 @@ import BaseInput from '../../components/ui/BaseInput';
 
 import s from './styles/styles.module.scss';
 
-function Auth(): React.JSX.Element {
+function AuthPage(): React.JSX.Element {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
@@ -30,4 +30,4 @@ function Auth(): React.JSX.Element {
   );
 }
 
-export default Auth;
+export default AuthPage;
