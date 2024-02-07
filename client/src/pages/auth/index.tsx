@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import BaseButton from '../ui/BaseButton';
-import BaseInput from '../ui/BaseInput';
+import BaseButton from '../../components/ui/BaseButton';
+import BaseInput from '../../components/ui/BaseInput';
 
 import s from './styles/styles.module.scss';
 

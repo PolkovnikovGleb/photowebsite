@@ -1,7 +1,7 @@
 import {RootState} from 'store/store';
 import {useSelector} from 'react-redux';
 import React from 'react';
-import AlbumItem from './AlbumItem';
+import AlbumItem from '../../components/albumItem/AlbumItem';
 
 import s from './styles/style.scss';
 

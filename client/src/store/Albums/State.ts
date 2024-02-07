@@ -1,4 +1,4 @@
-import {Album} from '../../type/typeAlbum';
+import {Album} from '../../types/typeAlbum';
 
 export type State = {
   albums: Album[];

@@ -1,6 +1,5 @@
 import React from 'react';
-import {Album} from '../../type/typeAlbum';
-import './styles/style.css';
+import {Album} from '../../types/typeAlbum';
 
 import s from './styles/style.scss';
 

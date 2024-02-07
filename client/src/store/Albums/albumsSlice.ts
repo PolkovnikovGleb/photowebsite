@@ -1,6 +1,6 @@
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
 import * as api from '../../api/apiAlbums';
-import {AlbumsState} from '../../type/typeAlbum';
+import {AlbumsState} from '../../types/typeAlbum';
 
 export const initialState: AlbumsState = {
   albums: [],
