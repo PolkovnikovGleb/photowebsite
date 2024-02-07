@@ -1,9 +1,12 @@
 import Auth from '../pages/auth';
 import Home from '../pages/home';
+import 
+  import AlbumPage from 'pages/album/AlbumPage';
 
 export const routes = {
   home: '/',
   auth: '/auth',
+  albums: '/albums',
 };
 
 export const router = [
@@ -18,5 +21,11 @@ export const router = [
     name: 'auth',
     path: routes.auth,
     component: Auth,
+  },
+  {
+    id: 2,
+    name: 'albums',
+    path: routes.albums,
+    component: AlbumPage,
   },
 ];
