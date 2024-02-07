@@ -1,5 +1,5 @@
 import {configureStore} from '@reduxjs/toolkit';
-import albumsSlice from 'components/features/AlbumPage/albumsSlice';
+import albumsSlice from 'store/Albums/albumsSlice';
 import {useDispatch} from 'react-redux';
 
 const store = configureStore({

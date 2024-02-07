@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import './App.css';
 import {Route, Routes} from 'react-router';
-import {router} from '../../configs/router';
-import {albumsInit} from 'components/features/AlbumPage/albumsSlice';
-import {useAppDispatch} from 'Redux/store';
+import {router} from '../configs/router';
+import {albumsInit} from 'store/Albums/albumsSlice';
+import {useAppDispatch} from 'store/store';
 
 function App(): JSX.Element {
   const dicpatch = useAppDispatch();

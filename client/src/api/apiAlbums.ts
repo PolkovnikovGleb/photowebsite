@@ -1,4 +1,4 @@
-import {Album} from './type';
+import {Album} from '../type/typeAlbum';
 
 export const albumsInitFetch = async (): Promise<Album[]> => {
   try {
@@ -12,11 +12,4 @@ export const albumsInitFetch = async (): Promise<Album[]> => {
     console.error('Error fetching album:', error);
     throw error;
   }
-};
-
-export const allAlbumsInitFetch = async (): Promise<Album[]> => {
-  const res = await fetch('/api/albums');
-  const data = await res.json();
-  console.log(data);
-  return data;
 };

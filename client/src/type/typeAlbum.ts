@@ -8,6 +8,5 @@ export type Album = {
 
 export type AlbumsState = {
   albums: Album[];
-  allAlbums: Album[];
   error: string | undefined;
 };

@@ -1,4 +1,4 @@
-import NavBar from 'components/features/Header/NavBar/NavBar';
+import NavBar from 'pages/NavBar/NavBar';
 import React from 'react';
 
 function Home(): React.JSX.Element {

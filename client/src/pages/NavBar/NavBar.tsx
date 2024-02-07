@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/style.css';
+import './styles/style.scss';
 import {Link, Outlet} from 'react-router-dom';
 
 export default function NavBar(): JSX.Element {
