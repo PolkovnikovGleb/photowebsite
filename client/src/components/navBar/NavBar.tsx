@@ -2,7 +2,7 @@ import React from 'react'
 import './styles/style.scss'
 import { Link, Outlet } from 'react-router-dom'
 
-export default function NavBar (): JSX.Element {
+export default function NavBar (): React.JSX.Element {
   return (
     <>
       <nav className="navbar">

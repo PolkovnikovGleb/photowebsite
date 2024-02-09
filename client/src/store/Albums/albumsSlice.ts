@@ -10,6 +10,7 @@ export const albumsInit = createAsyncThunk('albums/init', async () =>
   await api.albumsInitFetch()
 )
 
+// TODO : пофиксить все any в этом файле
 const albumsSlice = createSlice({
   name: 'albums',
   initialState,
