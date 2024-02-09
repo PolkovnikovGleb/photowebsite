@@ -1,5 +1,5 @@
-import {Album} from '../../types/typeAlbum';
+import { Album } from '../../types/typeAlbum'
 
-export type State = {
-  albums: Album[];
-};
+export interface State {
+  albums: Album[]
+}

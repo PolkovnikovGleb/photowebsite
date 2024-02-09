@@ -1,30 +1,30 @@
-import Auth from '../pages/auth';
-import Home from '../pages/home';
-import AlbumPage from 'pages/album/AlbumPage';
+import Auth from '../pages/auth/AuthPage'
+import Home from '../pages/home/HomePage'
+import Album from '../pages/album/AlbumPage'
 
 export const routes = {
   home: '/',
   auth: '/auth',
-  albums: '/albums',
-};
+  albums: '/albums'
+}
 
 export const router = [
   {
     id: 1,
     name: 'home',
     path: routes.home,
-    component: Home,
+    component: Home
   },
   {
     id: 5,
     name: 'auth',
     path: routes.auth,
-    component: Auth,
+    component: Auth
   },
   {
     id: 2,
     name: 'albums',
     path: routes.albums,
-    component: AlbumPage,
-  },
-];
+    component: Album
+  }
+]
