@@ -1,14 +1,14 @@
-import React, { ButtonHTMLAttributes } from 'react';
-import s from './styles.module.scss';
+import React, { ButtonHTMLAttributes } from 'react'
+import s from './styles.module.scss'
 
-function BaseButton(props: ButtonHTMLAttributes<HTMLButtonElement>): React.JSX.Element {
+function BaseButton (props: ButtonHTMLAttributes<HTMLButtonElement>): React.JSX.Element {
   const {
     children,
     className,
     type = 'button',
     onClick,
     ...attr
-  } = props;
+  } = props
 
   return (
     <button
@@ -19,7 +19,7 @@ function BaseButton(props: ButtonHTMLAttributes<HTMLButtonElement>): React.JSX.E
     >
       {children}
     </button>
-  );
+  )
 }
 
-export default BaseButton;
+export default BaseButton

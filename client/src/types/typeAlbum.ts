@@ -1,12 +1,12 @@
-export type Album = {
-  id: number;
-  title: string;
-  description: string;
-  url: string;
-  userId: number;
-};
+export interface Album {
+  id: number
+  title: string
+  description: string
+  url: string
+  userId: number
+}
 
-export type AlbumsState = {
-  albums: Album[];
-  error: string | undefined;
-};
+export interface AlbumsState {
+  albums: Album[]
+  error: string | undefined
+}

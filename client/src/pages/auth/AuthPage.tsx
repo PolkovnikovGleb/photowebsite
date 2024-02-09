@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
-import BaseButton from '../../components/ui/BaseButton';
-import BaseInput from '../../components/ui/BaseInput';
+import React, { useState } from 'react'
+import BaseButton from '../../components/ui/BaseButton'
+import BaseInput from '../../components/ui/BaseInput'
 
-import s from './styles/styles.module.scss';
+import s from './styles/styles.module.scss'
 
-function AuthPage(): React.JSX.Element {
-  const [email, setEmail] = useState<string>('');
-  const [password, setPassword] = useState<string>('');
+function AuthPage (): React.JSX.Element {
+  const [email, setEmail] = useState<string>('')
+  const [password, setPassword] = useState<string>('')
 
   return (
     <div className={s.auth}>
@@ -27,7 +27,7 @@ function AuthPage(): React.JSX.Element {
         <p className={s.auth__forgot}>Forgot your password?</p>
       </div>
     </div>
-  );
+  )
 }
 
-export default AuthPage;
+export default AuthPage

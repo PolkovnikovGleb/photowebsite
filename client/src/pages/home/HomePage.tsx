@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-function HomePage(): JSX.Element {
+function HomePage (): JSX.Element {
   return (
-    <div className="main">
+    <div>
       <h1>Главная страница</h1>
     </div>
-  );
+  )
 }
 
-export default HomePage;
+export default HomePage
