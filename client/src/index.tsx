@@ -5,7 +5,7 @@ import {BrowserRouter} from 'react-router-dom';
 import store from './store/store';
 
 import './assets/scss/main.scss';
-import Layout from './components/ Layout';
+import App from './App';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <Provider store={store}>
-      <Layout />
+      <App />
     </Provider>
   </BrowserRouter>
 );
