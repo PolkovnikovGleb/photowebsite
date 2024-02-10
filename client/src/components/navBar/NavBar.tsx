@@ -1,12 +1,12 @@
-import React from 'react'
-import './styles/style.scss'
-import { Link, Outlet } from 'react-router-dom'
+import React from 'react';
+import s from './styles/style.module.scss';
+import {Link, Outlet} from 'react-router-dom';
 
-export default function NavBar (): React.JSX.Element {
+export default function NavBar(): React.JSX.Element {
   return (
     <>
-      <nav className="navbar">
-        <div className="navMain">
+      <nav className={s.navbar}>
+        <div>
           <Link to="/">Главная</Link>
         </div>
         <div>
@@ -24,5 +24,5 @@ export default function NavBar (): React.JSX.Element {
       </nav>
       <Outlet />
     </>
-  )
+  );
 }
