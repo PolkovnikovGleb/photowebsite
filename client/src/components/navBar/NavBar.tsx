@@ -19,7 +19,7 @@ export default function NavBar(): React.JSX.Element {
           <Link to="/">Регистрация</Link> {/* Ссылка на регу */}
         </div>
         <div>
-          <Link to="/">Войти</Link> {/* Ссылка на вход */}
+          <Link to="/auth">Войти</Link> {/* Ссылка на вход */}
         </div>
       </nav>
       <Outlet />
