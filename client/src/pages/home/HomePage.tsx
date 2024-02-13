@@ -7,11 +7,11 @@ function HomePage(): React.JSX.Element {
     <div className={s.home}>
       <div className={s.home__description}>
         <img
-          className={s.description__img}
+          className={s.home__description_img}
           src="https://sun9-60.userapi.com/impf/F-dDtDNNC2oL0h9CoJSGCz6UXkYjHOEdbZbekA/NWf1plFl9Ew.jpg?size=943x943&quality=95&sign=c0d2750dd073603a33857775c338fd97&type=album"
           alt="photoadmin"
         />
-        <div className={s.description__text}>
+        <div className={s.home__description_text}>
           <h4>Привет, на связи Глеб!</h4>
           <p className={s.text}>
             Уже более 10 лет не выпускаю фотоаппрарат из рук. За это время
@@ -27,7 +27,7 @@ function HomePage(): React.JSX.Element {
         {services.map((item) => (
           <div>
             <img
-              className={s.price__img}
+              className={s.home__price_img}
               src={item.nameImg}
               alt="photoprice2"
             />
