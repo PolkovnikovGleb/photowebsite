@@ -7,8 +7,8 @@ function Footer(): React.JSX.Element {
     <div className={s.footer}>
       {socialMedia.map((item) => (
         <a href={item.link}>
-          <img className={s.footer__img} src={item.imglink} alt="icon" />
-          {item.linkname}
+          <img className={s.footer__img} src={item.linkImg} alt="icon" />
+          {item.linkName}
         </a>
       ))}
     </div>
