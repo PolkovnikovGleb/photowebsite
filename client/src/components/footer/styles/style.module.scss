@@ -7,23 +7,13 @@
   background-color: rgb(156 158 164 / 15%);
   flex: 0 0 auto;
 
-  &__tg,
-  &__inst,
-  &__vk {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
+  &__img {
+    height: 30px;
   }
+
   a {
     display: flex;
     align-items: center;
     gap: 5px;
   }
-}
-
-.tg__img,
-.vk__img,
-.inst__img {
-  height: 30px;
 }
