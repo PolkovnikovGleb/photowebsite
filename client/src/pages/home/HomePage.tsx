@@ -25,14 +25,14 @@ function HomePage(): React.JSX.Element {
       </div>
       <div className={s.home__price}>
         {services.map((item) => (
-          <div>
+          <div key={item.id}>
             <img
               className={s.home__price_img}
-              src={item.nameImg}
+              src={item.imgName}
               alt="photoprice2"
             />
-            <h5>{item.title}</h5>
-            <p>{item.description}</p>
+            <h5>{item.imgTitle}</h5>
+            <p>{item.imgDescription}</p>
           </div>
         ))}
       </div>

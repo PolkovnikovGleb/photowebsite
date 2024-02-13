@@ -7,6 +7,5 @@
   "parserOptions": {
     "ecmaVersion": "latest"
   },
-  "ignorePatterns": ["*.scc", "*.scss", "**/vendor/*.js"],
   "rules": {}
 }
