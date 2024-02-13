@@ -1,19 +1,28 @@
 .album {
-  margin: 10px;
+  margin: 15px;
   border: 1px rgb(247, 53, 53);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__img {
     max-height: 400px;
   }
 
   &__text {
-    position: absolute;
-    padding: 0 0 12px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 350px;
     color: rgb(255 255 255 / 66%);
-    width: 310px;
+  }
+
+  &__button {
+    margin-top: 5px;
+    width: 35px;
+    height: 20px;
+    font-size: 14px;
+    background-color: rgb(120 123 130);
+    box-shadow: 5px 5px 22px 2px rgba(199, 199, 199, 0.26);
+    color: aliceblue;
   }
 }

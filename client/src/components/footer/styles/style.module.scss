@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(0, 0, 0);
+  height: 45px;
+  background-color: rgb(156 158 164 / 15%);
+  flex: 0 0 auto;
+
+  &__img {
+    height: 30px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
